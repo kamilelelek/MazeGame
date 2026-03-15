@@ -49,6 +49,10 @@ public class Move implements Comparable<Move> {
         return x;
     }
 
+    public Move getLastMove() {
+        return lastMove;
+    }
+
     public static int dynamicDistance(int x, int y, int x1, int y1) {
         return Math.abs(x1 - x) + Math.abs(y1 - y);
     }
